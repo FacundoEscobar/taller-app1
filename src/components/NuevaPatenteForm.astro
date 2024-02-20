@@ -1,0 +1,108 @@
+<div class="bg-gray-400 rounded-lg p-4 shadow-md mx-auto max-w-md">
+    <h2 class="text-xl font-semibold mb-4">Agregar nueva patente</h2>
+    <form action="procesar_formulario.php" method="POST">
+        <div class="mb-2">
+            <label for="patente" class="block text-gray-700 font-semibold mb-1"
+                >Patente:</label
+            >
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="w-full px-2 py-1 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="Ingrese la patente"
+                required
+            />
+        </div>
+        <div class="mb-2">
+            <label for="text" class="block text-gray-700 font-semibold mb-1"
+                >Nombre del Cliente:</label
+            >
+            <input
+                type="text"
+                id="text"
+                name="text"
+                class="w-full px-2 py-1 border rounded-md focus:outline-none focus:border-blue-500"
+                placeholder="Ingrese el nombre del cliente"
+                required
+            />
+        </div>
+        <div class="mb-2">
+            <label for="day" class="block text-gray-700 font-semibold mb-1">
+                Dia de trabajo realizado
+            </label>
+            <input 
+            type="date"
+            id="day"
+            name="day"
+            class="w-full px-2 py-1 border rounden-md focus:outline-none focus:border-blue-500"
+            placeholder="Ingrese el dia que fue realizado el trabajo"
+            required>
+        </div>
+        <div class="mb-2">
+            <label for="text" class="block text-gray-700 font-semibold mb-1">
+                Repuesto
+            </label>
+            <input
+            type="text"
+            id="text"
+            name="repuesto"
+            class="w-full px-2 py-1 border rounden-md focus:outline-none focus:border-blue-500"
+            placeholder="Ingrese el repuesto utilizado"
+            required>
+        </div>
+        <div class="mb-2">
+            <label for="text" class="block text-gray-700 font-semibold mb-1">
+                En que Kilometro se hizo la reparación
+            </label>
+            <input
+            type="number"
+            id="km"
+            name="km"
+            class="w-full px-2 py-1 border rounden-md focus:outline-none focus:border-blue-500"
+            placeholder="Ingrese en que Km fue realizado el trabajo"
+            required>
+        </div>
+        <div class="mb-2">
+            <label for="text" class="block text-gray-700 font-semibold mb-1">
+                Tiempo de reparación
+            </label>
+            <input
+            type="text"
+            id="time"
+            name="time"
+            class="w-full px-2 py-1 border rounden-md focus:outline-none focus:border-blue-500"
+            placeholder="Ingrese en que Km fue realizado el trabajo"
+            required>
+        </div>
+        <div class="mb-2">
+            <label for="text" class="block text-gray-700 font-semibold mb-1">
+                Forma de Pago
+            </label>
+            <input
+            type="text"
+            id="pay"
+            name="pay"
+            class="w-full px-2 py-1 border rounden-md focus:outline-none focus:border-blue-500"
+            placeholder="Ingrese en que Km fue realizado el trabajo"
+            required>
+        </div>
+        <div class="mb-4">
+            <label for="mensaje" class="block text-gray-700 font-semibold mb-1"
+                >Descripciones:</label
+            >
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                class="w-full px-2 py-1 border rounded-md focus:outline-none focus:border-blue-500"
+                rows="3"
+                placeholder="Escriba su mensaje aquí"
+                required></textarea>
+        </div>
+        <button
+            type="submit"
+            class="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
+            >Enviar Mensaje</button
+        >
+    </form>
+</div>

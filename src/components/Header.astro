@@ -2,16 +2,32 @@
 import Layout from "../layouts/Layout.astro";
 import HeaderButton from "../components/HeaderButton.astro";
 ---
-<Layout>
-<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
-    <div class="mx-auto text-center mb-8 lg:mb-16">
-        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white text-center">Bienvenido Pablo</h2>
-    </div>
 
-    <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
-        <HeaderButton href="/crearPatente" class="text-white w-full">Nueva Patente</a>
-        <HeaderButton href="/" class="text-white w-full">Borrar Patente</a>
-        <HeaderButton href="/" class="text-white w-full">Modificar Patente</a>
+<Layout>
+    <header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+        <div class="mx-auto text-center mb-8 lg:mb-16">
+            <h2
+                class="mb-4 text-5xl tracking-tight font-extrabold text-white text-center"
+            >
+                Bienvenido Pablo
+            </h2>
+        </div>
+
+        <nav
+            class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+        >
+            <HeaderButton class="text-white w-full" href="/crearPatente">
+                Nueva Patente
+            </HeaderButton>
+        <HeaderButton href="/" class="text-white w-full">
+            Borrar Patente
+        </HeaderButton>
+        <HeaderButton href="/" class="text-white w-full">
+            Modificar Patente
+        </HeaderButton>
     </nav>
-</header>
+    <HeaderButton href="/" class="text-white w-full">
+        Mantenimiento
+    </HeaderButton>
+    </header>
 </Layout>
